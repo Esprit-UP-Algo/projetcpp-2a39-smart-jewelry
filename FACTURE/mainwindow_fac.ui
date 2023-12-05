@@ -1,0 +1,1701 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow_fac</class>
+ <widget class="QMainWindow" name="MainWindow_fac">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1250</width>
+    <height>647</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QTabWidget" name="tabWidget">
+    <property name="geometry">
+     <rect>
+      <x>110</x>
+      <y>0</y>
+      <width>1071</width>
+      <height>601</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">gridline-color:rgb(182, 79, 255);
+color: rgb(182, 79, 255);
+background-color: rgb(85, 0, 127);
+
+border-color:rgb(182, 79, 255);
+background-color: rgb(85, 0, 127);</string>
+    </property>
+    <property name="currentIndex">
+     <number>7</number>
+    </property>
+    <property name="iconSize">
+     <size>
+      <width>24</width>
+      <height>24</height>
+     </size>
+    </property>
+    <property name="elideMode">
+     <enum>Qt::ElideMiddle</enum>
+    </property>
+    <widget class="QWidget" name="tab">
+     <attribute name="title">
+      <string>Ajouter un Fournisseur</string>
+     </attribute>
+     <widget class="QGroupBox" name="groupBox">
+      <property name="geometry">
+       <rect>
+        <x>90</x>
+        <y>20</y>
+        <width>871</width>
+        <height>521</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(255, 170, 255)</string>
+      </property>
+      <property name="title">
+       <string>Ajout</string>
+      </property>
+      <widget class="QLabel" name="label">
+       <property name="geometry">
+        <rect>
+         <x>280</x>
+         <y>110</y>
+         <width>101</width>
+         <height>21</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">color: rgb(110, 76, 62);
+font: 12pt &quot;Andalus&quot;;</string>
+       </property>
+       <property name="text">
+        <string>Identifiant</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_2">
+       <property name="geometry">
+        <rect>
+         <x>230</x>
+         <y>270</y>
+         <width>181</width>
+         <height>16</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">color: rgb(110, 76, 62);
+font: 12pt &quot;Andalus&quot;;</string>
+       </property>
+       <property name="text">
+        <string>Numero de telephone</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_3">
+       <property name="geometry">
+        <rect>
+         <x>280</x>
+         <y>150</y>
+         <width>56</width>
+         <height>16</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">color: rgb(110, 76, 62);
+font: 12pt &quot;Andalus&quot;;</string>
+       </property>
+       <property name="text">
+        <string>Nom</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_4">
+       <property name="geometry">
+        <rect>
+         <x>280</x>
+         <y>190</y>
+         <width>71</width>
+         <height>16</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">color: rgb(110, 76, 62);
+font: 12pt &quot;Andalus&quot;;</string>
+       </property>
+       <property name="text">
+        <string>Prenom</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_5">
+       <property name="geometry">
+        <rect>
+         <x>280</x>
+         <y>230</y>
+         <width>56</width>
+         <height>16</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">color: rgb(110, 76, 62);
+font: 12pt &quot;Andalus&quot;;</string>
+       </property>
+       <property name="text">
+        <string>E-Mail</string>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="le_idf">
+       <property name="geometry">
+        <rect>
+         <x>420</x>
+         <y>110</y>
+         <width>131</width>
+         <height>22</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color: rgb(255, 255, 255);</string>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="le_num_tel">
+       <property name="geometry">
+        <rect>
+         <x>420</x>
+         <y>270</y>
+         <width>131</width>
+         <height>22</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color: rgb(255, 255, 255);</string>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="le_nom">
+       <property name="geometry">
+        <rect>
+         <x>420</x>
+         <y>150</y>
+         <width>131</width>
+         <height>22</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color: rgb(255, 255, 255);</string>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="le_prenom">
+       <property name="geometry">
+        <rect>
+         <x>420</x>
+         <y>190</y>
+         <width>131</width>
+         <height>22</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color: rgb(255, 255, 255);</string>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="le_email">
+       <property name="geometry">
+        <rect>
+         <x>420</x>
+         <y>230</y>
+         <width>131</width>
+         <height>22</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color: rgb(255, 255, 255);</string>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="pb_ajouter">
+       <property name="geometry">
+        <rect>
+         <x>690</x>
+         <y>450</y>
+         <width>111</width>
+         <height>31</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color: rgb(255, 255, 255);
+font: 75 10pt &quot;DIN Round Pro&quot;;
+
+</string>
+       </property>
+       <property name="text">
+        <string>Ajouter</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_6">
+       <property name="geometry">
+        <rect>
+         <x>0</x>
+         <y>0</y>
+         <width>131</width>
+         <height>121</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">selection-background-color: rgb(221, 216, 208);</string>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+       <property name="pixmap">
+        <pixmap>../jo/image_2023-09-18_224051649-removebg-preview.png</pixmap>
+       </property>
+       <property name="scaledContents">
+        <bool>true</bool>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_15">
+       <property name="geometry">
+        <rect>
+         <x>40</x>
+         <y>30</y>
+         <width>231</width>
+         <height>51</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>DIN Round Pro</family>
+         <pointsize>26</pointsize>
+         <weight>9</weight>
+         <italic>false</italic>
+         <bold>false</bold>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">
+font: 75 26pt &quot;DIN Round Pro&quot;;
+color: rgb(144, 111, 112);</string>
+       </property>
+       <property name="text">
+        <string>Ajout</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_20">
+       <property name="geometry">
+        <rect>
+         <x>0</x>
+         <y>440</y>
+         <width>251</width>
+         <height>81</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">font: 14pt &quot;Amsterdam Three Slant&quot;;
+color: rgb(110, 76, 62);</string>
+       </property>
+       <property name="text">
+        <string>igems</string>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="le_typep">
+       <property name="geometry">
+        <rect>
+         <x>420</x>
+         <y>310</y>
+         <width>131</width>
+         <height>22</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color: rgb(255, 255, 255);</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_30">
+       <property name="geometry">
+        <rect>
+         <x>230</x>
+         <y>310</y>
+         <width>151</width>
+         <height>21</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">color: rgb(110, 76, 62);
+font: 12pt &quot;Andalus&quot;;</string>
+       </property>
+       <property name="text">
+        <string>Type de produit</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_36">
+       <property name="geometry">
+        <rect>
+         <x>280</x>
+         <y>350</y>
+         <width>151</width>
+         <height>21</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">color: rgb(110, 76, 62);
+font: 12pt &quot;Andalus&quot;;</string>
+       </property>
+       <property name="text">
+        <string>Adresse</string>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="le_adresse">
+       <property name="geometry">
+        <rect>
+         <x>420</x>
+         <y>350</y>
+         <width>131</width>
+         <height>22</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color: rgb(255, 255, 255);</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_37">
+       <property name="geometry">
+        <rect>
+         <x>570</x>
+         <y>310</y>
+         <width>231</width>
+         <height>21</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">color: rgb(110, 76, 62);
+font: 9pt &quot;Andalus&quot;;</string>
+       </property>
+       <property name="text">
+        <string>(or,argent,cuivre,pierre,autre)</string>
+       </property>
+      </widget>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="tab_2">
+     <attribute name="title">
+      <string>Afficher les Fournisseurs</string>
+     </attribute>
+     <widget class="QGroupBox" name="groupBox_7">
+      <property name="geometry">
+       <rect>
+        <x>100</x>
+        <y>20</y>
+        <width>861</width>
+        <height>511</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(255, 170, 255)</string>
+      </property>
+      <property name="title">
+       <string>GroupBox</string>
+      </property>
+      <widget class="QTableView" name="tab_fournisseur">
+       <property name="geometry">
+        <rect>
+         <x>0</x>
+         <y>0</y>
+         <width>761</width>
+         <height>401</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color: rgb(255, 170, 255);
+gridline-color: rgb(144, 111, 112);
+color: rgb(154, 124, 111);
+font: 75 8pt &quot;DIN Round Pro&quot;;</string>
+       </property>
+       <property name="frameShape">
+        <enum>QFrame::Box</enum>
+       </property>
+       <property name="lineWidth">
+        <number>2</number>
+       </property>
+       <property name="autoScrollMargin">
+        <number>20</number>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="p_pdf">
+       <property name="geometry">
+        <rect>
+         <x>760</x>
+         <y>240</y>
+         <width>93</width>
+         <height>28</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Generer PDF</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_8">
+       <property name="geometry">
+        <rect>
+         <x>730</x>
+         <y>400</y>
+         <width>131</width>
+         <height>121</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color: rgb(255, 170, 255)</string>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+       <property name="pixmap">
+        <pixmap>../jo/image_2023-09-18_224051649-removebg-preview.png</pixmap>
+       </property>
+       <property name="scaledContents">
+        <bool>true</bool>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_21">
+       <property name="geometry">
+        <rect>
+         <x>0</x>
+         <y>430</y>
+         <width>251</width>
+         <height>81</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">font: 14pt &quot;Amsterdam Three Slant&quot;;
+background-color: rgb(255, 170, 255);
+color: rgb(110, 76, 62);</string>
+       </property>
+       <property name="text">
+        <string>igems</string>
+       </property>
+      </widget>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="tab_3">
+     <attribute name="title">
+      <string>Supprimer un Fournisseur</string>
+     </attribute>
+     <widget class="QGroupBox" name="groupBox_2">
+      <property name="geometry">
+       <rect>
+        <x>90</x>
+        <y>20</y>
+        <width>871</width>
+        <height>521</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(255, 170, 255)</string>
+      </property>
+      <property name="title">
+       <string>supprimer</string>
+      </property>
+      <widget class="QLabel" name="label_7">
+       <property name="geometry">
+        <rect>
+         <x>340</x>
+         <y>160</y>
+         <width>191</width>
+         <height>31</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">color: rgb(110, 76, 62);
+font: 12pt &quot;Andalus&quot;;</string>
+       </property>
+       <property name="text">
+        <string>Identifiant Fournisseur</string>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="le_id_supp">
+       <property name="geometry">
+        <rect>
+         <x>350</x>
+         <y>200</y>
+         <width>161</width>
+         <height>31</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color: rgb(255, 255, 255);</string>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="pb_supprimer">
+       <property name="geometry">
+        <rect>
+         <x>380</x>
+         <y>260</y>
+         <width>93</width>
+         <height>28</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color: rgb(255, 255, 255);
+font: 75 10pt &quot;DIN Round Pro&quot;;
+color: rgb(110, 76, 62);
+</string>
+       </property>
+       <property name="text">
+        <string>Supprimer</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_17">
+       <property name="geometry">
+        <rect>
+         <x>0</x>
+         <y>0</y>
+         <width>131</width>
+         <height>121</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">selection-background-color: rgb(221, 216, 208);
+background-color: rgb(255, 170, 255)</string>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+       <property name="pixmap">
+        <pixmap>../jo/image_2023-09-18_224051649-removebg-preview.png</pixmap>
+       </property>
+       <property name="scaledContents">
+        <bool>true</bool>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_16">
+       <property name="geometry">
+        <rect>
+         <x>20</x>
+         <y>20</y>
+         <width>261</width>
+         <height>51</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>DIN Round Pro</family>
+         <pointsize>26</pointsize>
+         <weight>9</weight>
+         <italic>false</italic>
+         <bold>false</bold>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">
+font: 75 26pt &quot;DIN Round Pro&quot;;
+color: rgb(144, 111, 112);</string>
+       </property>
+       <property name="text">
+        <string>Supression</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_22">
+       <property name="geometry">
+        <rect>
+         <x>0</x>
+         <y>440</y>
+         <width>251</width>
+         <height>81</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">font: 14pt &quot;Amsterdam Three Slant&quot;;
+color: rgb(110, 76, 62);</string>
+       </property>
+       <property name="text">
+        <string>igems</string>
+       </property>
+      </widget>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="tab_4">
+     <attribute name="title">
+      <string>Modifier un Fournisseur</string>
+     </attribute>
+     <widget class="QGroupBox" name="groupBox_3">
+      <property name="geometry">
+       <rect>
+        <x>100</x>
+        <y>20</y>
+        <width>871</width>
+        <height>521</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(255, 170, 255);</string>
+      </property>
+      <property name="title">
+       <string>Ajout</string>
+      </property>
+      <widget class="QLabel" name="label_9">
+       <property name="geometry">
+        <rect>
+         <x>280</x>
+         <y>110</y>
+         <width>101</width>
+         <height>21</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">color: rgb(110, 76, 62);
+font: 12pt &quot;Andalus&quot;;</string>
+       </property>
+       <property name="text">
+        <string>Identifiant</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_10">
+       <property name="geometry">
+        <rect>
+         <x>230</x>
+         <y>270</y>
+         <width>181</width>
+         <height>16</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">color: rgb(110, 76, 62);
+font: 12pt &quot;Andalus&quot;;</string>
+       </property>
+       <property name="text">
+        <string>Numero de telephone</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_11">
+       <property name="geometry">
+        <rect>
+         <x>280</x>
+         <y>150</y>
+         <width>56</width>
+         <height>16</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">color: rgb(110, 76, 62);
+font: 12pt &quot;Andalus&quot;;</string>
+       </property>
+       <property name="text">
+        <string>Nom</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_12">
+       <property name="geometry">
+        <rect>
+         <x>280</x>
+         <y>190</y>
+         <width>81</width>
+         <height>16</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">color: rgb(110, 76, 62);
+font: 12pt &quot;Andalus&quot;;</string>
+       </property>
+       <property name="text">
+        <string>Prenom</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_13">
+       <property name="geometry">
+        <rect>
+         <x>280</x>
+         <y>230</y>
+         <width>56</width>
+         <height>16</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">color: rgb(110, 76, 62);
+font: 12pt &quot;Andalus&quot;;</string>
+       </property>
+       <property name="text">
+        <string>E-Mail</string>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="le_idf_2">
+       <property name="geometry">
+        <rect>
+         <x>420</x>
+         <y>110</y>
+         <width>131</width>
+         <height>22</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color: rgb(255, 255, 255);</string>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="le_num_tel_2">
+       <property name="geometry">
+        <rect>
+         <x>420</x>
+         <y>270</y>
+         <width>131</width>
+         <height>22</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color: rgb(255, 255, 255);</string>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="le_nom_2">
+       <property name="geometry">
+        <rect>
+         <x>420</x>
+         <y>150</y>
+         <width>131</width>
+         <height>22</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color: rgb(255, 255, 255);</string>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="le_prenom_2">
+       <property name="geometry">
+        <rect>
+         <x>420</x>
+         <y>190</y>
+         <width>131</width>
+         <height>22</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color: rgb(255, 255, 255);</string>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="le_email_2">
+       <property name="geometry">
+        <rect>
+         <x>420</x>
+         <y>230</y>
+         <width>131</width>
+         <height>22</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color: rgb(255, 255, 255);</string>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="pb_modifier">
+       <property name="geometry">
+        <rect>
+         <x>590</x>
+         <y>450</y>
+         <width>101</width>
+         <height>31</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color: rgb(255, 255, 255);
+font: 75 10pt &quot;DIN Round Pro&quot;;
+color: rgb(110, 76, 62);
+selection-background-color: rgb(110, 76, 62);</string>
+       </property>
+       <property name="text">
+        <string>Modifier</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_14">
+       <property name="geometry">
+        <rect>
+         <x>0</x>
+         <y>0</y>
+         <width>131</width>
+         <height>121</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">selection-background-color: rgb(221, 216, 208);</string>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+       <property name="pixmap">
+        <pixmap>../jo/image_2023-09-18_224051649-removebg-preview.png</pixmap>
+       </property>
+       <property name="scaledContents">
+        <bool>true</bool>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_18">
+       <property name="geometry">
+        <rect>
+         <x>30</x>
+         <y>40</y>
+         <width>251</width>
+         <height>51</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>DIN Round Pro</family>
+         <pointsize>26</pointsize>
+         <weight>9</weight>
+         <italic>false</italic>
+         <bold>false</bold>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">
+font: 75 26pt &quot;DIN Round Pro&quot;;
+color: rgb(144, 111, 112);</string>
+       </property>
+       <property name="text">
+        <string>Modification</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_19">
+       <property name="geometry">
+        <rect>
+         <x>0</x>
+         <y>440</y>
+         <width>251</width>
+         <height>81</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">font: 14pt &quot;Amsterdam Three Slant&quot;;
+color: rgb(110, 76, 62);</string>
+       </property>
+       <property name="text">
+        <string>igems</string>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="pb_enregistrer">
+       <property name="geometry">
+        <rect>
+         <x>710</x>
+         <y>450</y>
+         <width>101</width>
+         <height>31</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color: rgb(255, 255, 255);
+font: 75 10pt &quot;DIN Round Pro&quot;;
+color: rgb(110, 76, 62);
+selection-background-color: rgb(110, 76, 62);</string>
+       </property>
+       <property name="text">
+        <string>Enregistrer</string>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="le_typep_2">
+       <property name="geometry">
+        <rect>
+         <x>420</x>
+         <y>310</y>
+         <width>131</width>
+         <height>22</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color: rgb(255, 255, 255);</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_31">
+       <property name="geometry">
+        <rect>
+         <x>230</x>
+         <y>310</y>
+         <width>151</width>
+         <height>21</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">color: rgb(110, 76, 62);
+font: 12pt &quot;Andalus&quot;;</string>
+       </property>
+       <property name="text">
+        <string>Type de produit</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_35">
+       <property name="geometry">
+        <rect>
+         <x>280</x>
+         <y>350</y>
+         <width>151</width>
+         <height>21</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">color: rgb(110, 76, 62);
+font: 12pt &quot;Andalus&quot;;</string>
+       </property>
+       <property name="text">
+        <string>Adresse</string>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="le_adresse_2">
+       <property name="geometry">
+        <rect>
+         <x>420</x>
+         <y>350</y>
+         <width>131</width>
+         <height>22</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color: rgb(255, 255, 255);</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_38">
+       <property name="geometry">
+        <rect>
+         <x>420</x>
+         <y>290</y>
+         <width>231</width>
+         <height>21</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">color: rgb(110, 76, 62);
+font: 9pt &quot;Andalus&quot;;</string>
+       </property>
+       <property name="text">
+        <string>or,argent,cuivre,pierre,autre</string>
+       </property>
+      </widget>
+     </widget>
+     <widget class="QLabel" name="label_26">
+      <property name="geometry">
+       <rect>
+        <x>920</x>
+        <y>220</y>
+        <width>121</width>
+        <height>111</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="pixmap">
+       <pixmap>../Capture_d_écran_2023-10-04_221707-removebg-preview.png</pixmap>
+      </property>
+      <property name="scaledContents">
+       <bool>true</bool>
+      </property>
+     </widget>
+     <zorder>label_26</zorder>
+     <zorder>groupBox_3</zorder>
+    </widget>
+    <widget class="QWidget" name="tab_6">
+     <attribute name="title">
+      <string>tri</string>
+     </attribute>
+     <widget class="QGroupBox" name="groupBox_5">
+      <property name="geometry">
+       <rect>
+        <x>90</x>
+        <y>10</y>
+        <width>871</width>
+        <height>521</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(255, 170, 255)</string>
+      </property>
+      <property name="title">
+       <string>Ajout</string>
+      </property>
+      <widget class="QPushButton" name="pb_idf">
+       <property name="geometry">
+        <rect>
+         <x>180</x>
+         <y>150</y>
+         <width>101</width>
+         <height>31</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color: rgb(255, 255, 255);
+font: 75 10pt &quot;DIN Round Pro&quot;;
+color: rgb(110, 76, 62);
+selection-background-color: rgb(110, 76, 62);</string>
+       </property>
+       <property name="text">
+        <string>Identifiant</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_40">
+       <property name="geometry">
+        <rect>
+         <x>0</x>
+         <y>0</y>
+         <width>131</width>
+         <height>121</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">selection-background-color: rgb(221, 216, 208);</string>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+       <property name="pixmap">
+        <pixmap>../jo/image_2023-09-18_224051649-removebg-preview.png</pixmap>
+       </property>
+       <property name="scaledContents">
+        <bool>true</bool>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_41">
+       <property name="geometry">
+        <rect>
+         <x>30</x>
+         <y>30</y>
+         <width>251</width>
+         <height>51</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>DIN Round Pro</family>
+         <pointsize>26</pointsize>
+         <weight>9</weight>
+         <italic>false</italic>
+         <bold>false</bold>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">
+font: 75 26pt &quot;DIN Round Pro&quot;;
+color: rgb(144, 111, 112);</string>
+       </property>
+       <property name="text">
+        <string>Tri</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_42">
+       <property name="geometry">
+        <rect>
+         <x>0</x>
+         <y>440</y>
+         <width>251</width>
+         <height>81</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">font: 14pt &quot;Amsterdam Three Slant&quot;;
+color: rgb(110, 76, 62);</string>
+       </property>
+       <property name="text">
+        <string>igems</string>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="pb_nom">
+       <property name="geometry">
+        <rect>
+         <x>570</x>
+         <y>150</y>
+         <width>101</width>
+         <height>31</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color: rgb(255, 255, 255);
+font: 75 10pt &quot;DIN Round Pro&quot;;
+color: rgb(110, 76, 62);
+selection-background-color: rgb(110, 76, 62);</string>
+       </property>
+       <property name="text">
+        <string>Nom</string>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="pb_typep">
+       <property name="geometry">
+        <rect>
+         <x>350</x>
+         <y>150</y>
+         <width>141</width>
+         <height>31</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color: rgb(255, 255, 255);
+font: 75 10pt &quot;DIN Round Pro&quot;;
+color: rgb(110, 76, 62);
+selection-background-color: rgb(110, 76, 62);</string>
+       </property>
+       <property name="text">
+        <string>Type de produit</string>
+       </property>
+      </widget>
+      <widget class="QTableView" name="tab_fournisseur_2">
+       <property name="geometry">
+        <rect>
+         <x>80</x>
+         <y>210</y>
+         <width>701</width>
+         <height>241</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color: rgb(255, 255, 255);
+gridline-color: rgb(144, 111, 112);
+color: rgb(154, 124, 111);
+font: 75 8pt &quot;DIN Round Pro&quot;;</string>
+       </property>
+       <property name="frameShape">
+        <enum>QFrame::Box</enum>
+       </property>
+       <property name="lineWidth">
+        <number>2</number>
+       </property>
+       <property name="autoScrollMargin">
+        <number>20</number>
+       </property>
+      </widget>
+     </widget>
+     <widget class="QLabel" name="label_39">
+      <property name="geometry">
+       <rect>
+        <x>920</x>
+        <y>220</y>
+        <width>121</width>
+        <height>111</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="pixmap">
+       <pixmap>../Capture_d_écran_2023-10-04_221707-removebg-preview.png</pixmap>
+      </property>
+      <property name="scaledContents">
+       <bool>true</bool>
+      </property>
+     </widget>
+     <zorder>label_39</zorder>
+     <zorder>groupBox_5</zorder>
+    </widget>
+    <widget class="QWidget" name="tab_7">
+     <attribute name="title">
+      <string>Rechercher Fournisseur</string>
+     </attribute>
+     <widget class="QGroupBox" name="groupBox_6">
+      <property name="geometry">
+       <rect>
+        <x>100</x>
+        <y>10</y>
+        <width>871</width>
+        <height>521</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(255, 170, 255)</string>
+      </property>
+      <property name="title">
+       <string>Ajout</string>
+      </property>
+      <widget class="QPushButton" name="pb_idf_2">
+       <property name="geometry">
+        <rect>
+         <x>180</x>
+         <y>150</y>
+         <width>101</width>
+         <height>31</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color: rgb(255, 255, 255);
+font: 75 10pt &quot;DIN Round Pro&quot;;
+color: rgb(110, 76, 62);
+selection-background-color: rgb(110, 76, 62);</string>
+       </property>
+       <property name="text">
+        <string>Identifiant</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_43">
+       <property name="geometry">
+        <rect>
+         <x>0</x>
+         <y>0</y>
+         <width>131</width>
+         <height>121</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">selection-background-color: rgb(221, 216, 208);</string>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+       <property name="pixmap">
+        <pixmap>../jo/image_2023-09-18_224051649-removebg-preview.png</pixmap>
+       </property>
+       <property name="scaledContents">
+        <bool>true</bool>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_44">
+       <property name="geometry">
+        <rect>
+         <x>30</x>
+         <y>30</y>
+         <width>251</width>
+         <height>51</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>DIN Round Pro</family>
+         <pointsize>26</pointsize>
+         <weight>9</weight>
+         <italic>false</italic>
+         <bold>false</bold>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">
+font: 75 26pt &quot;DIN Round Pro&quot;;
+color: rgb(144, 111, 112);</string>
+       </property>
+       <property name="text">
+        <string>Rechercher</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_45">
+       <property name="geometry">
+        <rect>
+         <x>0</x>
+         <y>440</y>
+         <width>251</width>
+         <height>81</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">font: 14pt &quot;Amsterdam Three Slant&quot;;
+color: rgb(110, 76, 62);</string>
+       </property>
+       <property name="text">
+        <string>igems</string>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="pb_nom_2">
+       <property name="geometry">
+        <rect>
+         <x>570</x>
+         <y>150</y>
+         <width>101</width>
+         <height>31</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color: rgb(255, 255, 255);
+font: 75 10pt &quot;DIN Round Pro&quot;;
+color: rgb(110, 76, 62);
+selection-background-color: rgb(110, 76, 62);</string>
+       </property>
+       <property name="text">
+        <string>Nom</string>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="pb_num_tel">
+       <property name="geometry">
+        <rect>
+         <x>350</x>
+         <y>150</y>
+         <width>181</width>
+         <height>31</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color: rgb(255, 255, 255);
+font: 75 10pt &quot;DIN Round Pro&quot;;
+color: rgb(110, 76, 62);
+selection-background-color: rgb(110, 76, 62);</string>
+       </property>
+       <property name="text">
+        <string>Numero de telephone</string>
+       </property>
+      </widget>
+      <widget class="QTableView" name="tab_fournisseur_3">
+       <property name="geometry">
+        <rect>
+         <x>80</x>
+         <y>210</y>
+         <width>701</width>
+         <height>241</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color: rgb(255, 255, 255);
+gridline-color: rgb(144, 111, 112);
+color: rgb(154, 124, 111);
+font: 75 8pt &quot;DIN Round Pro&quot;;</string>
+       </property>
+       <property name="frameShape">
+        <enum>QFrame::Box</enum>
+       </property>
+       <property name="lineWidth">
+        <number>2</number>
+       </property>
+       <property name="autoScrollMargin">
+        <number>20</number>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="lineEdit_critere">
+       <property name="geometry">
+        <rect>
+         <x>330</x>
+         <y>110</y>
+         <width>231</width>
+         <height>22</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color: rgb(255, 255, 255);</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_46">
+       <property name="geometry">
+        <rect>
+         <x>400</x>
+         <y>80</y>
+         <width>101</width>
+         <height>21</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">color: rgb(110, 76, 62);
+font: 12pt &quot;Andalus&quot;;</string>
+       </property>
+       <property name="text">
+        <string>Critére:</string>
+       </property>
+      </widget>
+     </widget>
+     <widget class="QLabel" name="label_47">
+      <property name="geometry">
+       <rect>
+        <x>920</x>
+        <y>220</y>
+        <width>121</width>
+        <height>111</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="pixmap">
+       <pixmap>../Capture_d_écran_2023-10-04_221707-removebg-preview.png</pixmap>
+      </property>
+      <property name="scaledContents">
+       <bool>true</bool>
+      </property>
+     </widget>
+     <zorder>label_47</zorder>
+     <zorder>groupBox_6</zorder>
+    </widget>
+    <widget class="QWidget" name="tab_8">
+     <attribute name="title">
+      <string>Statistique</string>
+     </attribute>
+     <widget class="QGroupBox" name="groupBox_8">
+      <property name="geometry">
+       <rect>
+        <x>80</x>
+        <y>10</y>
+        <width>871</width>
+        <height>521</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(255, 170, 255);</string>
+      </property>
+      <property name="title">
+       <string>Ajout</string>
+      </property>
+      <widget class="QLabel" name="label_48">
+       <property name="geometry">
+        <rect>
+         <x>0</x>
+         <y>0</y>
+         <width>131</width>
+         <height>121</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">selection-background-color: rgb(221, 216, 208);</string>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+       <property name="pixmap">
+        <pixmap>../jo/image_2023-09-18_224051649-removebg-preview.png</pixmap>
+       </property>
+       <property name="scaledContents">
+        <bool>true</bool>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_49">
+       <property name="geometry">
+        <rect>
+         <x>30</x>
+         <y>40</y>
+         <width>251</width>
+         <height>51</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>DIN Round Pro</family>
+         <pointsize>26</pointsize>
+         <weight>9</weight>
+         <italic>false</italic>
+         <bold>false</bold>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">
+font: 75 26pt &quot;DIN Round Pro&quot;;
+color: rgb(144, 111, 112);</string>
+       </property>
+       <property name="text">
+        <string>Statistique</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_50">
+       <property name="geometry">
+        <rect>
+         <x>0</x>
+         <y>440</y>
+         <width>251</width>
+         <height>81</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">font: 14pt &quot;Amsterdam Three Slant&quot;;
+color: rgb(110, 76, 62);</string>
+       </property>
+       <property name="text">
+        <string>igems</string>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="displayCharts">
+       <property name="geometry">
+        <rect>
+         <x>290</x>
+         <y>230</y>
+         <width>331</width>
+         <height>61</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Statistique</string>
+       </property>
+      </widget>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="tab_5">
+     <attribute name="title">
+      <string>Notifier un Fournisseur</string>
+     </attribute>
+     <widget class="QGroupBox" name="groupBox_4">
+      <property name="geometry">
+       <rect>
+        <x>90</x>
+        <y>20</y>
+        <width>871</width>
+        <height>521</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(255, 170, 255)</string>
+      </property>
+      <property name="title">
+       <string>Ajout</string>
+      </property>
+      <widget class="QLabel" name="label_27">
+       <property name="geometry">
+        <rect>
+         <x>380</x>
+         <y>130</y>
+         <width>101</width>
+         <height>21</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">color: rgb(110, 76, 62);
+font: 12pt &quot;Andalus&quot;;</string>
+       </property>
+       <property name="text">
+        <string>Identifiant</string>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="le_idf_3">
+       <property name="geometry">
+        <rect>
+         <x>360</x>
+         <y>160</y>
+         <width>131</width>
+         <height>22</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color: rgb(255, 255, 255);</string>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="pb_notfier">
+       <property name="geometry">
+        <rect>
+         <x>680</x>
+         <y>300</y>
+         <width>101</width>
+         <height>31</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color: rgb(255, 255, 255);
+font: 75 10pt &quot;DIN Round Pro&quot;;
+color: rgb(110, 76, 62);
+selection-background-color: rgb(110, 76, 62);</string>
+       </property>
+       <property name="text">
+        <string>Notifier</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_32">
+       <property name="geometry">
+        <rect>
+         <x>0</x>
+         <y>0</y>
+         <width>131</width>
+         <height>121</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">selection-background-color: rgb(221, 216, 208);</string>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+       <property name="pixmap">
+        <pixmap>../jo/image_2023-09-18_224051649-removebg-preview.png</pixmap>
+       </property>
+       <property name="scaledContents">
+        <bool>true</bool>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_33">
+       <property name="geometry">
+        <rect>
+         <x>40</x>
+         <y>30</y>
+         <width>251</width>
+         <height>51</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>DIN Round Pro</family>
+         <pointsize>26</pointsize>
+         <weight>9</weight>
+         <italic>false</italic>
+         <bold>false</bold>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">
+font: 75 26pt &quot;DIN Round Pro&quot;;
+color: rgb(144, 111, 112);</string>
+       </property>
+       <property name="text">
+        <string>Notification</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_34">
+       <property name="geometry">
+        <rect>
+         <x>0</x>
+         <y>440</y>
+         <width>251</width>
+         <height>81</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">font: 14pt &quot;Amsterdam Three Slant&quot;;
+color: rgb(110, 76, 62);</string>
+       </property>
+       <property name="text">
+        <string>igems</string>
+       </property>
+      </widget>
+      <widget class="QDateTimeEdit" name="dateTimeEdit">
+       <property name="geometry">
+        <rect>
+         <x>340</x>
+         <y>250</y>
+         <width>194</width>
+         <height>22</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color: rgb(255, 255, 255);</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_28">
+       <property name="geometry">
+        <rect>
+         <x>320</x>
+         <y>220</y>
+         <width>221</width>
+         <height>21</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">color: rgb(110, 76, 62);
+font: 12pt &quot;Andalus&quot;;</string>
+       </property>
+       <property name="text">
+        <string>Date et Heure de livraison</string>
+       </property>
+      </widget>
+     </widget>
+     <widget class="QLabel" name="label_29">
+      <property name="geometry">
+       <rect>
+        <x>920</x>
+        <y>220</y>
+        <width>121</width>
+        <height>111</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="pixmap">
+       <pixmap>../Capture_d_écran_2023-10-04_221707-removebg-preview.png</pixmap>
+      </property>
+      <property name="scaledContents">
+       <bool>true</bool>
+      </property>
+     </widget>
+     <zorder>label_29</zorder>
+     <zorder>groupBox_4</zorder>
+    </widget>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1250</width>
+     <height>26</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
